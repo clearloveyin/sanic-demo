@@ -1,0 +1,5 @@
+sanic==20.6.3
+sanic-pw==0.2.0
+sanic-restful==0.1.1
+sanic-script==0.3
+SQLAlchemy==1.3.19

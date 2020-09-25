@@ -1,7 +1,8 @@
 import os
-from __init__ import app
+from __init__ import app, manager
 from config import development, production
 from lib.middleware import print_on_request, print_on_response
+from blue.router_v1 import bp_v1
 
 
 def create_app():
@@ -11,6 +12,7 @@ def create_app():
     # 注册中间件
     app.register_middleware(print_on_request, attach_to='request')
     app.register_middleware(print_on_response, attach_to='response')
+    app.blueprint(bp_v1)
 
     return app
 

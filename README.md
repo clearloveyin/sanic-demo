@@ -14,3 +14,4 @@
         async def post(self, request, arguments):
             print(arguments)
             return arguments`
+ ## 启动：python manage.py runserver
